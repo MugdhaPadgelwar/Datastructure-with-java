@@ -52,7 +52,7 @@ public class DoublyLL {
             node.prev = p;
             if (node.next != null) {
                 node.next.prev = node;
-            }
+       }
     
         }
     
