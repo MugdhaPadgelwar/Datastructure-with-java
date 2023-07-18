@@ -12,8 +12,8 @@ public class stackMain {
         System.out.println(list.pop());
         System.out.println(list.pop());
         System.out.println(list.pop());
-        System.out.println(list.pop());
-        System.out.println(list.pop());
+        System.out.println(list.peek());
+       
         
 
     }

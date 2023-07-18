@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class insertionSort {
     public static void main(String[] args) {
-        int[] array = { 67, 87, 90, 12, 34 };
+        int[] array = { 67, 87, -90, 12, 34 };
         insertion(array);
         System.out.println(Arrays.toString(array));
 
@@ -13,6 +13,9 @@ public class insertionSort {
             for (int j = i + 1; j > 0; j--) {
                 if (arr[j] < arr[j - 1]) {
                     swap(arr, j, j - 1);
+                }
+                else{
+                    break;
                 }
             }
         }
