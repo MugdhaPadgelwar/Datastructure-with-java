@@ -1,10 +1,10 @@
 import java.util.*;
 
 class Node {
-    int data;
+    int man;
     Node left, right;
-    Node(int data) {
-        this.data = data;
+    Node(int man) {
+        this.man = man;
         left = null;
         right = null;
     }
@@ -39,7 +39,7 @@ public class BinearyTreeImplementation {
         if (curr == null)
             return;
 
-        preOrder.add(curr.data);
+        preOrder.add(curr.man);
         preOrderTrav(curr.left, preOrder);
         preOrderTrav(curr.right, preOrder);
     }
